@@ -16,7 +16,7 @@ app.get("/", function(req,res){
 var today = new Date();
 
 var options = {
-    weekday: "long",
+    weekday: "short",
     day: "numeric",
     month: "long",
 };
