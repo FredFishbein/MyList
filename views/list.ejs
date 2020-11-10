@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My List</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
+<%- include("header")-%>
     <div class = "box" id ="heading">
-     <h1> Hi Fred Its <%= KindOfDay %></h1>
+     <h1> Hi Fred: <%= listTitle %></h1>
     </div> 
     <div class = "box2" id ="heading">
         <h1>Whats on the list for today?</h1>
@@ -26,12 +17,10 @@
     <% } %>
     <form class = ""action="/" method ="POST">
         <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-        <button type="submit" name ="button">+</button>
+        <button type="submit" name ="list" value =<%= listTitle %>>+</button>
         </form>
     </div>
-    <p class ="fred">Iam-Fred.com © </p>
-
-
     
-</body>
-</html>
+
+
+    <%- include("footer")-%>
